@@ -35,6 +35,10 @@
         lato{
             font-family: 'Lato', sans-serif;
         }
+        .fa-brands{
+            font-size: 30px;
+        }
+        
       </style>
 
 </head>
@@ -142,7 +146,7 @@
     </header>
     <main class="container mx-auto">
         <!-- deal of day section.  -->
-        <div class="flex md:flex-col lg:flex-row">
+        <div class="flex flex-col md:flex-col lg:flex-row">
             <div class="bg-base-200 flex-1">
                 <div class="hero-content">
                   <div class="max-w-md">
@@ -152,7 +156,7 @@
                 </div>
               </div>
 
-              <div class="flex-1 ml-56 md:ml-0">
+              <div class="flex-1  md:ml-0 w-52">
                 <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
                     <div class="flex flex-col">
                       <span class="countdown font-mono text-5xl">
@@ -263,10 +267,47 @@
                 </div>
               </div>
         </div>
-        <div class="flex items-center justify-center mt-10 mb-20">
+        <div class="flex items-center justify-center mt-10 mb-10">
             <button class="btn btn-primary bg-bg-color border-none">Shop All</button>
         </div>
+
+        <!-- start team section.  -->
+        <section>
+            <div class="hero h-[600px]" style="background-image: url(/images/team.png);">
+                <div class="hero-overlay bg-opacity-60"></div>
+                <div class="hero-content text-center text-neutral-content">
+                  <div class="max-w-md">
+                    <h3 class="mb-5 text-4xl font-bold text-white">Meet the team section</h3>
+                    <p class="mb-5 text-white">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                  </div>
+                </div>             
+              </div>
+        </section>
     </main>
-    <footer></footer>
+    <footer class="footer footer-center p-10 bg-[#121212] text-base-content rounded mt-20">
+        <div class="flex ">
+            <img src="/images/logo.png" alt="">
+            <h3 class="font-bold text-3xl text-white">Fruit Burst</h3>
+        </div>
+        <div class="grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-10 text-white">
+          <a class="link link-hover">Home</a> 
+          <a class="link link-hover">About us</a> 
+          <a class="link link-hover">Shop</a> 
+          <a class="link link-hover">All Fruits</a>
+          <a class="link link-hover">Support</a>
+          <a class="link link-hover">My Account</a>
+        </div> 
+        <div>
+          <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-10">
+            <i class="fa-brands fa-twitter text-white"></i>
+            <i class="fa-brands fa-facebook text-white bg-[#6868fa] rounded-full"></i>
+            <i class="fa-brands fa-youtube text-white bg-[red] rounded-xl border-none"></i>
+            <i class="fa-brands fa-linkedin bg-[black] text-white"></i>
+            <i class="fa-brands fa-instagram text-orange-500"></i> 
+            <i class="fa-brands fa-apple text-white"></i>
+           
+          </div>
+        </div> 
+      </footer>
 </body>
 </html>
